@@ -1,0 +1,550 @@
+﻿@model PagedList.IPagedList<XC_Shoe.Models.Shoe>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Manage Products";
+    Layout = "~/Views/Shared/AdminLayoutPage.cshtml";
+    string projectDirectory = System.Web.Hosting.HostingEnvironment.MapPath("~");
+    var lstTypeShoes = ViewBag.lstTypeShoes as SelectList;
+    var lstColor = ViewBag.lstColor as SelectList;
+    var ShoesName = ViewBag.ShoesName as SelectList;
+    var Icons = ViewBag.Icons as SelectList;
+
+}
+
+<nav class="navbar navbar-expand-md box">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button class="add-new-btn" aria-current="page" href="#"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add new
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content" style="height:60%">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Add New Shoes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <hr class="my-4">
+                                    <form id="AddNewShoes" action="@Url.Action("AddNewshoes", "Admin")" method="post" style="height:50%; width:100%">
+                                        <div class="container mt-5">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#innerModal">
+                                                New Icon
+                                            </button>
+                                            <div class="mb-3">
+                                                <!-- Label và Dropdown -->
+                                                <label for="dropdownIcon" class="form-label fs-6">Icon</label>
+                                                <select class="form-select sm-6" id="Icon" name="Icon" aria-label="Select Icons" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                    <option value="">Select Icons</option>
+                                                    @foreach (var item in Icons)
+                                                    {
+                                                        <option value="@item.Value">@item.Text</option>
+                                                    }
+                                                </select>
+                                            </div>
+                                            <hr class="my-2 ">
+                                            <div class="mb-3">
+                                                <label for="dropdownStyleShoes" class="form-label fs-6">Style Shoes</label>
+                                                <select class="form-select sm-6" id="NewTypeShoes" name="NewTypeShoes" aria-label="Select TypeShoes" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                    <option value="">Select TypeShoes</option>
+                                                    @foreach (var item in lstTypeShoes)
+                                                    {
+                                                        <option value="@item.Value">@item.Text</option>
+                                                    }
+                                                </select>
+                                            </div>
+                                            <hr class="my-2 ">
+
+                                            <div class="mb-3">
+                                                <label for="nameNS" class="form-label fs-6">Name Shoes</label>
+                                                <input type="text" class="form-control text-center" id="nameNS" name="nameNS" placeholder="Enter Shoes Name" style="height: 18%; font-size: 15px; width: 100%; background-color: aliceblue" required>
+                                            </div>
+                                            <hr class="my-2 ">
+                                            <div class="mb-3">
+                                                <label for="price" class="form-label fs-6">Price</label>
+                                                <input type="text" class="form-control text-center" id="price" name="price" placeholder="Enter Price" style="height: 18%; font-size: 15px; width: 100%; background-color: aliceblue" required>
+                                            </div>
+                                            <hr class="my-2 ">
+
+                                            <div class="mb-3">
+                                                <label for="dropdownStyleType" class="form-label fs-6">Styletype</label>
+                                                <select class="form-select sm-6" id="Styletype" name="Styletype" aria-label="Select Gender" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                    <option value="Men">Men</option>
+                                                    <option value="Women">Women</option>
+                                                </select>
+                                            </div>
+                                            <hr class="my-2 ">
+                                            <div class="container mt-5">
+                                                <label for="dropdownColours" class="form-label fs-6">Color Options</label>
+                                                <select class="form-select sm-6" id="Colours" name="Colours" aria-label="Select Icons" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                    <option value="">Select Colour</option>
+                                                    @foreach (var item in lstColor)
+                                                    {
+                                                        <option value="@item.Text">@item.Text</option>
+                                                    }
+                                                </select>
+                                            </div>
+
+                                            <hr class="my-2 ">
+
+                                            <div class="mb-3">
+                                                <label for="image" class="form-label fs-6">Image URLs</label>
+                                                <input type="file" id="image" name="image" accept="image/*" multiple style="display: none;">
+                                                <div class="mb-3">
+                                                    <button id="folderSelectorBtn" class="btn btn-primary">Select Image(s)</button>
+                                                </div>
+                                                <ul id="selectedImagesList"></ul>
+                                                <div id="imagePreview" class="image-lg"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="saveChanges2()">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Inner Modal -->
+                    <div class="modal fade" id="innerModal" tabindex="-1" aria-labelledby="innerModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="height:60%">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="innerModalLabel">Add New Icon</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="AddIconForm" method="post" action="@Url.Action("AddIcon", "Admin")" style="height:50%;width:100%">
+                                        <div class="mb-3">
+                                            <label for="IconID" class="form-label fs-6">IconID</label>
+                                            <input type="text" class="form-control text-center" id="IconID" name="IconID" placeholder="Enter IconID" style="height:17%;font-size:12px;width:100%; background-color:azure" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="IconName" class="form-label fs-6">StyleType</label>
+                                            <input type="text" class="form-control text-center" id="IconName" name="IconName" placeholder="Enter Icon Name" style="height:17%;font-size:12px;width:100%; background-color:azure" required>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="saveChanges1()">Save changes</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="add-new-btn" aria-current="page" href="#"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                Add new colour shoes
+            </button>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="height:60%">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add New Shoes</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <hr class="my-4">
+                            <form style="height:50%; width:100%">
+                                <div class="container mt-5">
+                                    <div class="mb-3">
+                                        <!-- Label và Dropdown -->
+                                        <label for="dropdownExample" class="form-label fs-6">Icon</label>
+                                        <select class="form-select sm-6" id="IconID" name="IconsID" aria-label="Select itemName" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                            <option value="">Select Colour</option>
+                                            @foreach (var item1 in ShoesName)
+                                            {
+                                                <option value1="@item1.Value">@item1.Text</option>
+                                            }
+                                        </select>
+                                    </div>
+
+                                    <hr class="my-2 ">
+                                    <div class="container mt-5">
+                                        <label class="form-label fs-6">Color Options</label>
+                                        <select class="form-select sm-6" id="NShoesColours" name="NShoesColours" aria-label="Select Icons" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                            <option value="">Select Colour</option>
+                                            @foreach (var item in lstColor)
+                                            {
+                                                <option value="@item.Text">@item.Text</option>
+                                            }
+                                        </select>
+                                    </div>
+
+                                    <hr class="my-2 ">
+
+                                    <div class="mb-3">
+                                        <label for="imageNewShoesColor" class="form-label fs-6">Image URLs</label>
+                                        <input type="file" id="imageNewShoesColor" name="imageNewShoesColor" accept="image/*" multiple style="display: none;">
+                                        <div class="mb-3">
+                                            <button id="folderSelectorBtn1" class="btn btn-primary">Select Image(s)</button>
+                                        </div>
+                                        <ul id="selectedImagesList1"></ul>
+                                        <div id="imagePreview1" class="image-lg"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @using (Html.BeginForm("ManageProduct", "Admin", FormMethod.Get, new { @class = "d-flex search-box justify-content-end" }))
+            {
+                <input type="hidden" name="styleStyle" value="@ViewBag.Style" />
+                <input type="hidden" name="sort" value="@ViewBag.Sort" />
+                <input class="form-control" type="search" placeholder="Search" name="search"
+                       aria-label="Search" value="@ViewBag.SearchValue">
+                <button class="search-btn" type="submit">Search</button>
+            }
+        </div>
+    </div>
+</nav>
+<div class="box list-box d-flex flex-column">
+    <div class="header-list-box d-flex justify-content-between flex-column">
+        <div class="list-box-title d-flex">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonSort" data-bs-toggle="dropdown" aria-expanded="false">
+                    @ViewBag.Style
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSort">
+                    <li><a class="dropdown-item" href="@Url.Action("ManageProduct", "Admin", new { styleStyle = "Men", search = ViewBag.SearchValue})">Men</a></li>
+                    <li><a class="dropdown-item" href="@Url.Action("ManageProduct", "Admin", new { styleStyle = "Women", search = ViewBag.SearchValue })">Women</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonSort" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort
+                    @{
+                        if (ViewBag.Sort == "ASC")
+                        {
+                            <i class="fa-solid fa-arrow-down-a-z"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-solid fa-arrow-down-z-a"></i>
+                        }
+
+                    }
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSort">
+                    <li><a class="dropdown-item" href="@Url.Action("ManageProduct", "Admin", new { styleStyle = ViewBag.Style, sort = "ASC", search = ViewBag.SearchValue })">Sort <i class="fa-solid fa-arrow-down-a-z"></i></a></li>
+                    <li><a class="dropdown-item" href="@Url.Action("ManageProduct", "Admin", new { styleStyle = ViewBag.Style, sort = "DESC", search = ViewBag.SearchValue })">Sort <i class="fa-solid fa-arrow-down-z-a"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example" class="pagination-nav d-flex justify-content-center">
+            <ul class="pagination">
+
+                @Html.PagedListPager(Model, page => Url.Action("ManageProduct", new { page }))
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content-list-box product-list">
+        <div class="row products">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="#">
+                            @{
+                                string resourcesPath = "~/Resources/Shoes/";
+                                string directoryPath = Path.Combine(projectDirectory, "Resources", "Shoes", @item.Url);
+                                resourcesPath = Path.Combine(resourcesPath, @item.Url);
+
+                                string[] imageFiles = Directory.GetFiles(directoryPath, "*-AVT.jpg").Union(Directory.GetFiles(directoryPath, "*-AVT.png")).ToArray();
+
+                                string imagePath = imageFiles.Length > 0 ? Path.Combine(directoryPath, Path.GetFileName(imageFiles[0])) : "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b207c97d-1d63-4e43-9339-375b26222ae2/air-jordan-xxxviii-fiba-pf-basketball-shoes-XnhFhP.png";
+                                string fileNameOnly = Path.GetFileName(imagePath);
+                                resourcesPath = Path.Combine(resourcesPath, fileNameOnly);
+                            }
+                            <img class="card-img-top img-fluid" alt="Men" src="@Url.Content(resourcesPath)">
+                        </a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h2 class="card-title">@Html.DisplayFor(modelItem => item.NameShoes)</h2>
+                            </a>
+                            <p class="card-text type-shoes">@Html.DisplayFor(modelItem => item.TypeShoesName)</p>
+                            <p class="card-text colour">@Html.DisplayFor(modelItem => item.NameColor)</p>
+
+                            <p class="shoes-price">@Html.DisplayFor(modelItem => item.Price)<span class"unit"> VND</span></p>
+                        </div>
+                        <div class="card-footer d-flex">
+                            <button class="edit-btn col"
+                                    data-bs-toggle="modal" data-bs-target="#@item.ShoesID">
+                                Edit
+                            </button>
+                            <button class="delete-btn col"><a href="@Url.Action("DeleteShoes", "Admin", new { ShoesID = item.ShoesID, ColourName = item.NameColor })">Delete</a></button>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="@item.ShoesID" data-bs-backdrop="static"
+                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">@Html.DisplayFor(modelItem => item.NameShoes)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="EditForm" method="post" action="@Url.Action("EditShoes", "Admin")" style="height:50%;width:100%">
+                                        <input type="hidden" id="OldShoesID" name="OldShoesID" value="@Html.DisplayFor(modelItem => item.ShoesID)">
+
+                                        <div class="mb-3">
+                                            <label for="NewShoesID">Item Name:</label>
+                                            <select class="form-select sm-6" id="NewShoesID" name="NewShoesID" aria-label="Select itemName" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                <option value="@Html.DisplayFor(modelItem => item.ShoesID)">@Html.DisplayFor(modelItem => item.NameShoes)</option>
+                                                @foreach (var item1 in ShoesName)
+                                                {
+                                                    <option value="@Html.DisplayFor(modelItem => item.ShoesID)">@item1.Text</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="TypeShoes">TypeShoes:</label>
+                                            <select class="form-select sm-5" id="TypeShoes" name="TypeShoes" aria-label="Select TypeShoes" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                <option value="@Html.DisplayFor(modelItem => item.TypeShoesID)">@Html.DisplayFor(modelItem => item.TypeShoesName)</option>
+                                                @foreach (var item1 in lstTypeShoes)
+                                                {
+                                                    <option value="@item1.Value">@item1.Text</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="styleType">Style Type:</label>
+                                            <select class="form-select sm-6" id="styleType" name="styleType" aria-label="Select StyleType" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                <option value="Men">Men</option>
+                                                <option value="Women">Women</option>
+                                            </select>
+                                        </div>
+                                        <input type="hidden" id="OldColour" name="OldColour" value="@Html.DisplayFor(modelItem => item.NameColor)">
+                                        <div class="mb-3">
+                                            <label for="NewColour">Colour:</label>
+                                            <select class="form-select sm-6" id="NewColour" name="NewColour" aria-label="Select Colour" style="text-align: center; font-size: 15px; background-color: aliceblue">
+                                                <option value="@Html.DisplayFor(modelItem => item.NameColor)">@Html.DisplayFor(modelItem => item.NameColor)</option>
+                                                @foreach (var item1 in lstColor)
+                                                {
+                                                    <option value="@Html.DisplayFor(modelItem => item.NameColor)">@item1.Text</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="price">Price:</label>
+                                            <input type="text" id="price" name="price" class="form-control" value="@Html.DisplayFor(modelItem => item.Price)" style="background-color: aliceblue; text-align: center">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="discount">Discount:</label>
+                                            <input type="text" id="discount" name="discount" class="form-control" value="@Html.DisplayFor(modelItem => item.Discount)" style="background-color: aliceblue; text-align: center">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" onclick="saveChanges()" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <div class="footer-list-box d-flex justify-content-center">
+        <nav aria-label="Page navigation example" class="pagination-nav d-flex justify-content-center">
+            <ul class="pagination">
+
+                @Html.PagedListPager(Model, page => Url.Action("ManageProduct", new { page }))
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script>
+    document.getElementById('folderSelectorBtn').addEventListener('click', function () {
+        document.getElementById('image').click();
+    });
+
+    document.getElementById('image').addEventListener('change', function () {
+        var selectedImagesList = document.getElementById('selectedImagesList');
+        var imagePreview = document.getElementById('imagePreview');
+        selectedImagesList.innerHTML = ''; // Clear previous entries
+        imagePreview.innerHTML = ''; // Clear previous image previews
+
+        var files = this.files;
+        for (var i = 0; i < files.length; i++) {
+            var listItem = document.createElement('li');
+            selectedImagesList.appendChild(listItem);
+
+            // Display image preview
+            var imgContainer = document.createElement('div');
+            imgContainer.style.display = 'inline-block'; // Ensure images appear in a row
+            var img = document.createElement('img');
+            img.src = URL.createObjectURL(files[i]);
+            img.style.maxWidth = '100px';
+            img.style.maxHeight = '100px';
+            img.style.marginRight = '10px';
+
+            imgContainer.appendChild(img);
+            imagePreview.appendChild(imgContainer);
+        }
+    });
+</script>
+
+<script>
+    document.getElementById('folderSelectorBtn1').addEventListener('click', function () {
+        document.getElementById('imageNewShoesColor').click();
+    });
+
+    document.getElementById('imageNewShoesColor').addEventListener('change', function () {
+        var selectedImagesList = document.getElementById('selectedImagesList1');
+        var imagePreview = document.getElementById('imagePreview1');
+        selectedImagesList.innerHTML = ''; // Clear previous entries
+        imagePreview.innerHTML = ''; // Clear previous image previews
+
+        var files = this.files;
+        for (var i = 0; i < files.length; i++) {
+            var listItem = document.createElement('li');
+            selectedImagesList.appendChild(listItem);
+
+            // Display image preview
+            var imgContainer = document.createElement('div');
+            imgContainer.style.display = 'inline-block'; // Ensure images appear in a row
+            var img = document.createElement('img');
+            img.src = URL.createObjectURL(files[i]);
+            img.style.maxWidth = '100px';
+            img.style.maxHeight = '100px';
+            img.style.marginRight = '10px';
+
+            imgContainer.appendChild(img);
+            imagePreview.appendChild(imgContainer);
+        }
+    });
+</script>
+<style>
+    .preview-image {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 5px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .col-6 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .pagination {
+        margin: 0;
+    }
+
+        .pagination a {
+            padding: 8px 12px;
+            margin: 0 2px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #007bff;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+            .pagination a:hover {
+                background-color: #007bff;
+                color: #fff;
+            }
+
+        .pagination .disabled {
+            color: #ccc;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+</style>
+<script>
+    function saveChanges() {
+        // Get a reference to the form
+        var form = document.getElementById("EditForm");
+
+        // Submit the form
+        form.submit();
+    }
+    function saveChanges1() {
+        // Get a reference to the form
+        var form = document.getElementById("AddIconForm");
+
+        // Submit the form
+        form.submit();
+    }
+    function saveChanges2() {
+        // Get a reference to the form
+        var form = document.getElementById("AddNewShoes");
+
+        // Submit the form
+        form.submit();
+    }
+</script>
+<script>
+    function pagination(currentPage, pageSize) {
+        $.ajax({
+            url: "/Admin/GetPaginatedData",
+            data: { currentPage: currentPage, pageSize: pageSize },
+            type: "GET",
+            success: function (result) {
+                // Assuming you have a container with class 'products' to load the data
+                $(".row products").html(result);
+            },
+            error: function () {
+                alert("Error loading paginated data.");
+            }
+        });
+    }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Add event listener to the button
+        document.getElementById('folderSelectorBtn1').addEventListener('click', function () {
+            // Trigger click event on the hidden file input
+            document.getElementById('imageNewShoesColor').click();
+        });
+
+        // Handle file selection
+        document.getElementById('imageNewShoesColor').addEventListener('change', function () {
+            var selectedFiles = this.files; // Get the selected files
+
+            // Display selected file names in the list
+            var selectedImagesList = document.getElementById('selectedImagesList1');
+            selectedImagesList.innerHTML = ''; // Clear previous selections
+
+            for (var i = 0; i < selectedFiles.length; i++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = selectedFiles[i].name;
+                selectedImagesList.appendChild(listItem);
+            }
+
+            // Optionally, you can add code here to preview the selected images in the 'imagePreview1' container.
+        });
+    });
+</script>

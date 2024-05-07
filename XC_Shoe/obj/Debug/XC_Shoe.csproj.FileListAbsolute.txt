@@ -1,0 +1,158 @@
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\XC_Shoe.dll.config
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\XC_Shoe.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\XC_Shoe.pdb
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\Microsoft.Web.Infrastructure.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Helpers.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Mvc.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Razor.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Deployment.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Razor.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Razor.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Deployment.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Razor.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Helpers.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Mvc.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.csproj.AssemblyReference.cache
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.csproj.CoreCompileInputs.cache
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.csproj.CopyComplete
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.pdb
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csc.exe
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csc.exe.config
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csc.rsp
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csi.exe
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csi.exe.config
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csi.rsp
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.AppContext.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Collections.Immutable.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Console.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.Compression.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.FileSystem.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Net.Http.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Net.Sockets.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.ValueTuple.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.XPath.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\vbc.exe
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\vbc.exe.config
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\vbc.rsp
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\VBCSCompiler.exe
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\VBCSCompiler.exe.config
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.Mvc.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.Mvc.xml
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\GoogleAuthentication.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\Newtonsoft.Json.dll
+C:\Học Kì 5\LTWeb\XC_WebShoes\XC_Shoe\bin\Newtonsoft.Json.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\XC_Shoe.dll.config
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\XC_Shoe.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\XC_Shoe.pdb
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csc.exe
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csc.exe.config
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csc.rsp
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csi.exe
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csi.exe.config
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\csi.rsp
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.AppContext.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Collections.Immutable.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Console.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.Compression.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.FileSystem.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Net.Http.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Net.Sockets.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.ValueTuple.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.XPath.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\vbc.exe
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\vbc.exe.config
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\vbc.rsp
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\VBCSCompiler.exe
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\roslyn\VBCSCompiler.exe.config
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\GoogleAuthentication.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\Microsoft.Web.Infrastructure.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\Newtonsoft.Json.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.Mvc.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Helpers.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Mvc.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Razor.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Deployment.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Razor.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\PagedList.Mvc.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\Newtonsoft.Json.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Razor.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Deployment.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Webpages.Razor.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Helpers.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\System.Web.Mvc.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.csproj.AssemblyReference.cache
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.csproj.CoreCompileInputs.cache
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.csproj.CopyComplete
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.dll
+C:\Hocki5\LTWeb\XC_WebShoes\XC_Shoe\obj\Debug\XC_Shoe.pdb

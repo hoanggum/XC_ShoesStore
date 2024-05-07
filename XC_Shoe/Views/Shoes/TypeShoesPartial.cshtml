@@ -1,0 +1,15 @@
+﻿@model IEnumerable<XC_Shoe.Models.TypeShoes>
+<ul class="list-group list-group-flush text-left">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">
+            <a href="@Url.Action("ShoesPage", "User", new {gender = ViewBag.gender, icon = ViewBag.icon, type = item.NameTS, search = ViewBag.search})">@item.NameTS</a>
+        </li>
+    }
+    <li class="list-group-item">
+        <a href="@Url.Action("ShoesPage", "User", new {gender = ViewBag.gender, icon = ViewBag.icon, type = "", search = ViewBag.search})" style="text-transform:uppercase; text-decoration:none;">All</a>
+    </li>
+
+</ul>
+
+
